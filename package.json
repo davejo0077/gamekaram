@@ -1,0 +1,30 @@
+{
+  "name": "super-kids-learning-games",
+  "version": "1.0.0",
+  "description": "Interactive learning games for kids aged 4-10 with Memory Monster, Space Math Adventure, Word Wizard, and Rainbow Color Quest",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "dev": "serve -s . -l 3000"
+  },
+  "keywords": [
+    "kids",
+    "learning",
+    "games",
+    "education",
+    "interactive",
+    "memory",
+    "math",
+    "spelling",
+    "colors",
+    "creative"
+  ],
+  "author": "Super Kids Games",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Fun Learning Games for Kids 🌟</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> SUPER KIDS GAMES</h1>
+                <p>Learn • Play • Grow!</p>
+            </div>
+            <div class="age-selector">
+                <button class="age-btn active" data-age="all">All Ages</button>
+                <button class="age-btn" data-age="4-6">Ages 4-6</button>
+                <button class="age-btn" data-age="6-8">Ages 6-8</button>
+                <button class="age-btn" data-age="8-10">Ages 8-10</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    <h2>🎮 Welcome to the Most Fun Learning Games Ever! 🎮</h2>
+                    <p>Choose your adventure and start learning while having a blast!</p>
+                </div>
+                <div class="mascot">
+                    <div class="mascot-character">🦄</div>
+                </div>
+            </div>
+
+            <div class="games-grid">
+                <!-- Memory Monster Game -->
+                <div class="game-card" data-age="4-6,6-8">
+                    <div class="game-icon">🧠</div>
+                    <h3>Memory Monster</h3>
+                    <p>Feed the hungry monster by remembering patterns!</p>
+                    <div class="game-stats">
+                        <span class="age-badge">Ages 4-8</span>
+                        <span class="skill-badge">Memory</span>
+                    </div>
+                    <button class="play-btn" onclick="openGame('memory-monster')">
+                        <i class="fas fa-play"></i> Play Now!
+                    </button>
+                </div>
+
+                <!-- Math Adventure Game -->
+                <div class="game-card" data-age="6-8,8-10">
+                    <div class="game-icon">🚀</div>
+                    <h3>Space Math Adventure</h3>
+                    <p>Solve math problems to fuel your rocket to the stars!</p>
+                    <div class="game-stats">
+                        <span class="age-badge">Ages 6-10</span>
+                        <span class="skill-badge">Math</span>
+                    </div>
+                    <button class="play-btn" onclick="openGame('math-adventure')">
+                        <i class="fas fa-play"></i> Play Now!
+                    </button>
+                </div>
+
+                <!-- Word Wizard Game -->
+                <div class="game-card" data-age="6-8,8-10">
+                    <div class="game-icon">🎩</div>
+                    <h3>Word Wizard</h3>
+                    <p>Cast spelling spells and build magical words!</p>
+                    <div class="game-stats">
+                        <span class="age-badge">Ages 6-10</span>
+                        <span class="skill-badge">Spelling</span>
+                    </div>
+                    <button class="play-btn" onclick="openGame('word-wizard')">
+                        <i class="fas fa-play"></i> Play Now!
+                    </button>
+                </div>
+
+                <!-- Color Quest Game -->
+                <div class="game-card" data-age="4-6,6-8">
+                    <div class="game-icon">🎨</div>
+                    <h3>Rainbow Color Quest</h3>
+                    <p>Mix colors and create beautiful art masterpieces!</p>
+                    <div class="game-stats">
+                        <span class="age-badge">Ages 4-8</span>
+                        <span class="skill-badge">Colors</span>
+                    </div>
+                    <button class="play-btn" onclick="openGame('color-quest')">
+                        <i class="fas fa-play"></i> Play Now!
+                    </button>
+                </div>
+            </div>
+
+            <div class="achievements-section">
+                <h2>🏆 Your Achievements</h2>
+                <div class="achievements-grid" id="achievements">
+                    <!-- Achievements will be dynamically added -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Game Modal -->
+    <div class="game-modal" id="gameModal">
+        <div class="game-container">
+            <div class="game-header">
+                <h3 id="gameTitle">Game Title</h3>
+                <button class="close-btn" onclick="closeGame()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="game-content" id="gameContent">
+                <!-- Game content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Super Kids Games. Made with ❤️ for awesome kids!</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/games/memory-monster.js"></script>
+    <script src="js/games/math-adventure.js"></script>
+    <script src="js/games/word-wizard.js"></script>
+    <script src="js/games/color-quest.js"></script>
+</body>
+</html>
